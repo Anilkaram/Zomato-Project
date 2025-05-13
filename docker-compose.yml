@@ -4,6 +4,8 @@ services:
   app:
     image: anildoc143/zomato:v1
     container_name: zomato-cont
+    deploy:
+      replicas: 4
     ports:
       - "1111:3000"
   
